@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 class Square:
     """
-    Class that defines properties of square by: (based on 2-square.py).
+    a class Square that defines a square by: (based on 2-square.py)
     """
     def __init__(self, size=0):
         """Creates new instances of square.
