@@ -3,12 +3,11 @@
 
 
 class Node:
-    """Represent a node in a singly-linked list."""
+    """a node in a singly-linked list."""
 
     def __init__(self, data, next_node=None):
-        """Initialize a new Node.
-
-        Args:
+        """ constructor
+        Argments:
             data (int): The data of the new Node.
             next_node (Node): The next node of the new Node.
         """
@@ -17,7 +16,7 @@ class Node:
 
     @property
     def data(self):
-        """Get/set the data of the Node."""
+        """Get the data of the Node."""
         return (self.__data)
 
     @data.setter
@@ -28,7 +27,7 @@ class Node:
 
     @property
     def next_node(self):
-        """Get/set the next_node of the Node."""
+        """Get the next_node of the Node."""
         return (self.__next_node)
 
     @next_node.setter
@@ -39,7 +38,7 @@ class Node:
 
 
 class SinglyLinkedList:
-    """Represent a singly-linked list."""
+    """ a singly-linked list."""
 
     def __init__(self):
         """Initalize a new SinglyLinkedList."""
