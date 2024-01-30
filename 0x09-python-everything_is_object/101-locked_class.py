@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-""" LockedClass
-"""
+"""class with predefined number of slots of just first_name"""
 
 
 class LockedClass:
-    __slots__= ['first_name']
+    """if user defined, no new items can be added to list"""
+    __slots__ = ['first_name']
