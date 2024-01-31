@@ -1,43 +1,22 @@
-
-    >>> print_square = __import__('4-print_square').print_square
-
-    >>> print_square(4)
-    ####
-    ####
-    ####
-    ####
-
-    >>> print_square(10)
-    ##########
-    ##########
-    ##########
-    ##########
-    ##########
-    ##########
-    ##########
-    ##########
-    ##########
-    ##########
-
-    >>> print_square(0)
+#!/usr/bin/python3
+"""Module built for Python 0x07 task 3. Error in project formatting scheme \
+advances file numbering +1 for every task after 0.
+"""
 
 
-    >>> print_square("Hello")
-    Traceback (most recent call last):
-    TypeError: size must be an integer
+def print_square(size):
+    """Function that prints a square of a given size in '#' characters:
 
-    >>> print_square(5.7)
-    Traceback (most recent call last):
-    TypeError: size must be an integer
+    Args:
+        size (int): length of side of square, in monospace chars
 
-    >>> print_square(-2)
-    Traceback (most recent call last):
-    ValueError: size must be >= 0
+    """
+    if type(size) is not int:
+        raise TypeError('size must be an integer')
+    if size < 0:
+        raise ValueError('size must be >= 0')
 
-    >>> print_square(-3.0)
-    Traceback (most recent call last):
-    TypeError: size must be an integer
-
-    >>> print_square()
-    Traceback (most recent call last):
-    TypeError: print_square() missing 1 required positional argument: 'size'
+    for row in range(size):
+        for col in range(size):
+            print('#', end="")
+        print()
