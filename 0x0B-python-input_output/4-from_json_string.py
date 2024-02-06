@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""loads from object to json"""
 import json
 
 
