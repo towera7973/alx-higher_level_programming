@@ -1,11 +1,11 @@
+
 #!/usr/bin/python3
-"""Module 7-base_geometry.
-Creates a BaseGeometry class.
+"""Module 7-base_geometry that Creates a BaseGeometry class.
 """
 
 
 class BaseGeometry:
-    """Class with public instance methods."""
+    """Class with public instance methods.area and integer_validator"""
 
     def area(self):
         """Raises an Exception with the message
