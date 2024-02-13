@@ -93,7 +93,7 @@ class Base:
                 ret.append(cls.create(**d))
         return ret
 
-     @staticmethod
+    @staticmethod
     def draw(list_rectangles, list_squares):
         """Opens a Turtle window and draws
         rectangles and squares.
